@@ -7,23 +7,23 @@
     <title>Estados del agua</title>
 </head>
 <body>
-    Dime una temperatura: <input type="text" tempid><br>
+    Dime una temperatura: <input type="text" id= tempid><br>
     <br><input type="button" value="ver estado" onclick="verestado"><br>
     
     <script>
         function verestado(){
             // alert("test")
       var temp=document.getElementById("tempid").value;
-      var resultado= if (temp<0) {
-        action="hielo"
-      } else { if (temp>100) { action="vapor"
+      if (temp<0) {
+        alert("HIELO")
+      }if (temp<100) {
+        alert("líquido")
         
-      } else { action="líquido"
+      }if (temp>100) {
+        alert("vapor")
         
       }
-        
-      }
-    }
+     
     
         
     </script>
